@@ -212,7 +212,7 @@ span{
 }
 
 .contact-info {
-  margin-bottom: 25px; /* প্রতিটি contact ব্লকের মাঝে gap */
+  margin-bottom: 50px; /* প্রতিটি contact ব্লকের মাঝে gap */
 }
 
 .contact-info p {
@@ -287,3 +287,4 @@ span{
         margin-top: 4rem;
     }
 }
+
