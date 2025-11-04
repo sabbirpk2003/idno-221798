@@ -134,14 +134,17 @@ span{
     border-radius: 50%;
 }
 
-.home-img img{
+.home-img img {
     position: relative;
-    width: 32vw;
+    width: 250px;        
+    height: 275px;       
     border-radius: 50%;
-    box-shadow: 0 0 25px solid #b74b4b;
+    object-fit: cover;   
+    box-shadow: 0 0 25px #b74b4b;  
     cursor: pointer;
-    transition: 0.2s linear;
+    transition: 0.3s ease;
 }
+
 
 .home-img img:hover{
     font-size: 1.8rem;
@@ -206,6 +209,22 @@ span{
     content: "software Developer";
     color: #b74b4b;
     animation: words 20s infinite;
+}
+
+.contact-info {
+  margin-bottom: 25px; /* প্রতিটি contact ব্লকের মাঝে gap */
+}
+
+.contact-info p {
+  margin: 4px 0; /* উপরের ও নিচের লাইন ঘন রাখে */
+  line-height: 1.3;
+}
+
+.contact-info h3 {
+  margin: 6px 0;
+  font-size: 1.6rem;
+  color: #b74b4b;
+  font-weight: 600;
 }
 
 .typing-text span::after{
