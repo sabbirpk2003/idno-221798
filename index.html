@@ -9,6 +9,13 @@
     <title>Portfolio Website</title>
 </head>
 <body>
+    <!-- Intro Video Section -->
+<div class="intro-video-container">
+    <video id="introVideo" autoplay muted playsinline>
+        <source src="Technology Background Template 1080_Copyright free _Intro template Full HD with sound_Free video.mp4" type="video/mp4">
+    </video>
+</div>
+
     <header>
         <a href="#" class="logo">       </a>
 
@@ -76,9 +83,24 @@
     </a>
   </button>
 </section>
+<script>
+  const intro = document.querySelector(".intro-video-container");
+  const video = document.getElementById("introVideo");
+
+  video.onended = () => {
+    intro.style.opacity = "0";
+    intro.style.pointerEvents = "none";
+
+    setTimeout(() => {
+      intro.style.display = "none";
+    }, 800);
+  };
+</script>
+
 
 </body>
 </html>
+
 
 
 
